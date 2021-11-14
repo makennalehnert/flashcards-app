@@ -34,7 +34,6 @@ export default function AddCard() {
         loadDeck();
       }, [params.deckId]);
 
-
     function handleChange({target}){
         setCard({
           ...card,

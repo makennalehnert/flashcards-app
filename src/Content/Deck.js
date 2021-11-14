@@ -34,7 +34,7 @@ export default function Deck({ decks, setDecks }) {
       setCurrentIndexDeck(Object.values(params) - 1);
     }
     loadDeck();
-  }, [params.deckId]);
+  }, [params.deckId, params]);
 
   async function deleteCardHandler(cardId){
       if(window.confirm("Delete this card? You will not be able to recover it.")) { 

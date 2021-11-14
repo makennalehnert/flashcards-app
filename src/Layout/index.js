@@ -32,7 +32,7 @@ function Layout() {
     }
     loadDecks();
     return () => abortController.abort();
-  }, []);
+  }, [setDecks]);
 
   return (
     <>
